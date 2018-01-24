@@ -1,9 +1,6 @@
-def some_method(name='alice')
-  b = <<~TEXT.upcase
-    これはヒアドキュメントです。#{name}
-    <<~を使うと内部文字列のインデント部分が無視されます。
-  TEXT
-  puts b
+def buy_burger(menu, drink: true, **others)
+  p menu
+  p others
 end
 
-puts some_method
+buy_burger('cheese', drink: true)
